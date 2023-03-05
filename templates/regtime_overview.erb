@@ -1,0 +1,27 @@
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Registration hours</title>
+</head>
+<body>
+  <table>
+  <th>Hour</th><th>Number of registrations</th>
+    <% reg_hours.each do |data| %>
+    <tr>
+        <td><%= "#{data[0]}:00 - #{data[0]}:59" %></td>
+        <td><%= "#{data[1]}" %></td>
+    </tr>
+    <% end %>
+  </table>
+
+  <table>
+  <th>Weekday</th><th>Number of registrations</th>
+    <% reg_days.each do |data| %>
+    <tr>
+        <td><%= "#{data[0]}" %></td>
+        <td><%= "#{data[1]}" %></td>
+    </tr>
+    <% end %>
+  </table>
+</body>
+</html>

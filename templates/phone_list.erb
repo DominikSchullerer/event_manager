@@ -1,0 +1,17 @@
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Phone list</title>
+</head>
+<body>
+  <table>
+  <th>Name</th><th>Phone number</th>
+    <% phone_list.each do |name, phone_number| %>
+    <tr>
+        <td><%= "#{name}" %></td>
+        <td><%= "#{phone_number}" %></td>
+    </tr>
+    <% end %>
+  </table>
+</body>
+</html>
